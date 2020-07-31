@@ -14,7 +14,7 @@ eureka:
 zuul:
   routes:
     sysmanage.serviceId: hrm-sysmanage # 服务名
-    sysmanage.path: /hjq/** # 把myUser打头的所有请求都转发给user-provider 2
+    sysmanage.path: /sysmanage/** # 把myUser打头的所有请求都转发给user-provider 2
   ignored-services: "*" #所有服务都不允许以服务名来访问
   prefix: "/wl" #加一个统一前缀 1   http://localhost:9527/  1. services /  2. sysmanage / systemdictionary/list
   retryable: true #是否重试
